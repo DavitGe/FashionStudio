@@ -8,12 +8,11 @@ const NavContainer = styled(motion.div)`
 
   position: absolute;
   top: ${(props) => (props.click ? '0' : `-${props.theme.navHeight}`)};
+  transition: all 0.3 ease;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transition: all 0.3 ease;
 `;
 
 const MenuBtn = styled.li`
@@ -65,17 +64,10 @@ const NavBar = () => {
   const [click, setClick] = useState(false);
   return (
     <NavContainer
-      click={click}
-      initial={{
-        y: '-100%',
-      }}
-      animate={{
-        y: 0,
-      }}
-      transition={{
-        duration: 2,
-        delay: 2,
-      }}
+      click={+click}
+      initial={{ y: `-100%` }}
+      animate={{ y: 0 }}
+      transition={{ duration: 2, delay: 2 /* 2 */ }}
     >
       <MenuItems
         drag="y"
