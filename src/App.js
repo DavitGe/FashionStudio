@@ -40,12 +40,13 @@ function App() {
           <ScrollTriggerProxy />
           <AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
-              <Home />
-              <About />
-              <Shop />
-              <Banner />
-              <NewArrival />
-              <Footer />
+              <Home key="home" />
+              <About key="about" />
+              <Shop key="shop" />
+              {/* <Marquee key="marquee" /> */}
+              <Banner key="marquee" />
+              <NewArrival key="new arrival" />
+              <Footer key="Footer" />
             </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>

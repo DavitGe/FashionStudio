@@ -48,6 +48,10 @@ const FooterComponent = styled.footer`
     padding: 0 1rem;
     border-top: 1px solid ${(props) => props.theme.text};
     border-bottom: 1px solid ${(props) => props.theme.text};
+
+    @media (max-width: 48em) {
+      justify-content: center;
+    }
   }
 
   li {
@@ -59,6 +63,13 @@ const FooterComponent = styled.footer`
     &:hover {
       transform: scale(1.1);
     }
+    @media (max-width: 48em) {
+      padding: 1rem;
+      font-size: ${(props) => props.theme.fontmd};
+    }
+  }
+  @media (max-width: 48em) {
+    width: 90vw;
   }
 `;
 
@@ -73,6 +84,17 @@ const Bottom = styled.div`
 
   a {
     text-decoration: underline;
+  }
+
+  @media (max-width: 64em) {
+    flex-direction: column;
+    justify-content: center;
+    span {
+      transform: none !important;
+    }
+  }
+  @media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontmd};
   }
 `;
 
