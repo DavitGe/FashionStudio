@@ -3,8 +3,7 @@
 Live url: [Visit](https://fashion-studio-60z5g25nm-davitge.vercel.app/)
 
 #### FashionStudio:
-
-Fashion store landing webpage. built with React, Redux, JavaScript, and CSS.
+Landing webpage. built with React, Redux, JavaScript, and CSS.
 
 ## Installation and Setup Instructions
 
